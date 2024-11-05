@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: yellow;
+    color: #bb86fc; /* Color de los enlaces */
     text-decoration: none;
 }
 
@@ -35,6 +35,14 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
+    display: flex;
+    justify-content: center; /* Centrar la sección de artículos */
+}
+
+#articulos {
+    max-width: 800px; /* Ancho máximo para la sección de artículos */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    padding: 0 20px; /* Espacio a los lados */
 }
 
 article {
@@ -53,6 +61,7 @@ footer {
 /* Estilo para imágenes */
 img {
     max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
-    height: auto;
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Mantiene la proporción de aspecto y recorta si es necesario */
     border-radius: 8px; /* Bordes redondeados */
 }
